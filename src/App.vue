@@ -1,10 +1,12 @@
 <template>
   <div id="app">
     <CounterMoustique :initial-count="initialCount" />
+    <MqttClient />
   </div>
 </template>
 
 <script>
+import MqttClient from './components/MqttClient.vue'; // Utilisation du nom correct
 import CounterMoustique from './components/CounterMoustique.vue'; // PascalCase ou camelCase
 
 export default {
@@ -14,6 +16,7 @@ export default {
     };
   },
   components: {
+    MqttClient,
     CounterMoustique, // Utilisation du nom correct
   },
 };
