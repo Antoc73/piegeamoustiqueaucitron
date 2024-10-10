@@ -1,0 +1,50 @@
+/* reset.css */
+
+/* Réinitialisation des marges et des remplissages */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Réinitialiser les styles pour les éléments de texte */
+  body {
+    font-family: Arial, sans-serif; /* Choisissez une police de base */
+    line-height: 1.6; /* Hauteur de ligne pour une meilleure lisibilité */
+  }
+  
+  /* Styles des titres */
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: normal; /* Enlève le gras par défaut */
+  }
+  
+  /* Réinitialiser les listes */
+  ul, ol {
+    list-style: none; /* Supprime les puces et les numéros */
+  }
+  
+  /* Réinitialiser les images */
+  img {
+    max-width: 100%; /* Empêche les images de dépasser la largeur de leur conteneur */
+    height: auto; /* Garde le ratio des images */
+  }
+  
+  /* Réinitialiser les tableaux */
+  table {
+    border-collapse: collapse; /* Supprime les espaces entre les cellules */
+    width: 100%; /* Largeur par défaut */
+  }
+  
+  /* Réinitialiser les boutons */
+  button {
+    border: none; /* Supprime la bordure par défaut */
+    background: none; /* Supprime le fond par défaut */
+    cursor: pointer; /* Change le curseur sur hover */
+  }
+  
+  /* Réinitialiser les liens */
+  a {
+    text-decoration: none; /* Supprime le soulignement */
+    color: inherit; /* Prend la couleur du texte par défaut */
+  }
+  

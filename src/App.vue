@@ -1,26 +1,23 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <CounterMoustique :initial-count="initialCount" />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import CounterMoustique from './components/CounterMoustique.vue'; // PascalCase ou camelCase
 
 export default {
-  name: 'App',
+  data() {
+    return {
+      initialCount: 10,
+    };
+  },
   components: {
-    HelloWorld
-  }
-}
+    CounterMoustique, // Utilisation du nom correct
+  },
+};
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<style src="./assets/reset.css"></style>
+<style src="./assets/style.css"></style>
